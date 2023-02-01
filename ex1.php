@@ -48,6 +48,8 @@ for($c=0 ; $c<10 ;$c++){
     </table>
     "
     ?>
+    <h1>5-adding screenshot</h1>
+    <img src="Capture.JPG">
 
 <?php include("footer.php") ?>   
 
