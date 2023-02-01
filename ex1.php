@@ -21,6 +21,33 @@ for($c=0 ; $c<10 ;$c++){
     echo "<h3>Date</h3>";
      echo date("m . d . Y");
     ?> 
+    <h3>3.1 Variable in php</h3>
+    <?php
+    $title1 = "php is intresting";
+    echo "<h4>" . $title1 . "</h4>";
+    ?>
+    <h3>3.5 Table and Variables</h3>
+    <?php
+    $g1 = 5;
+    $g2 = 4;
+    $g3 = 5;
+    echo "
+    <table>
+    <tr>
+    <th>S.N</th><th>Name</th><th>Grade</th>
+    </tr> 
+    <tr>
+    <td>1</td><td>ferdous</td><td>$g1</td>
+    </tr>
+    <tr>
+    <td>2</td><td>meow</td><td>$g2</td>
+    </tr>
+    <tr>
+    <td>3</td><td>ayoo</td><td>$g3</td>
+    </tr>
+    </table>
+    "
+    ?>
 
 <?php include("footer.php") ?>   
 
