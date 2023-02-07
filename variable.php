@@ -52,7 +52,7 @@ include("header.php") ?>
 <?php
 $first_string = "this is the first string";
 $second_string = " and this is the second string";
-$joinedString = $first_string + $second_string;
+$joinedString = $first_string.$second_string;
 echo $joinedString;
 
 echo "<br>the lenght of joined string :". strlen($joinedString);
@@ -68,12 +68,8 @@ echo "<br>the lenght of joined string :". strlen($joinedString);
 ?>
 <h3>6-script to detect the browser</h3>
 <?php
-echo "the browser used: " . $_SERVER["HTTP_USER_AGENT"];
+
+echo $_SERVER['HTTP_USER_AGENT'] . "\n\n";
 ?>
-
-
-
-    
-
 
 <?php include("footer.php")?>
