@@ -37,6 +37,12 @@
           <a class="nav-link" href="controlflow.php">controlflow</a>
         </li>
         <li class="nav-item">
+          <a class="nav-link" href="array.php">arrays</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="calculator.php">Calculator</a>
+        </li>
+        <li class="nav-item">
           <a class="nav-link" href="aboutus.php">About us</a>
         </li>
         <li class="nav-item">
