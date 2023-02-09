@@ -18,18 +18,24 @@ if ($color == "red") {
 }
 ?>
 <h2>3-Grading</h2>
+<form action="" method="get">
+<input type="number" name="grade" placeholder="Grade" step="0.01" class="form-control" required>
+<input type="submit" name="submit" value="submit">
+</form>
 <?php
-$grade;
-if ($grade > 80) {
-    echo "excellent";
-} elseif ($grade <= 80 && $grade >70){
-    echo "great";
-} elseif ($grade <= 70 && $grade > 60) {
-    echo "good";
-} elseif ($grade <= 60 && $grade > 50) {
-    echo"Pass";
-}elseif($grade <= 50){
-    echo "fail";
+if (isset($_GET["submit"])) {
+    $grade = $_GET["grade"];
+    if ($grade > 80) {
+        echo "excellent";
+    } elseif ($grade <= 80 && $grade > 70) {
+        echo "great";
+    } elseif ($grade <= 70 && $grade > 60) {
+        echo "good";
+    } elseif ($grade <= 60 && $grade > 50) {
+        echo "Pass";
+    } elseif ($grade <= 50) {
+        echo "fail";
+    }
 }
 ?>
 <h2>4-voting system</h2>

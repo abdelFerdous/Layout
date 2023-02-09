@@ -15,10 +15,14 @@ echo implode("," ,$courses1);
 <h2>3-sort array</h2>
 <?php
 $courses3=array("PHP", "HTML", "JavaScript", "CMS", "Project");
-echo "ascending order by value : ".implode(",",sort($courses3));
-echo "ascending oder by key :".implode(",",ksort($courses3));
-echo "descending oder by value :".implode(",",rsort($courses3));
-echo "descending oder by key :".implode(",",krsort($courses3));
+sort($courses3);
+echo "ascending order by value : ".implode(",",$courses3)."<br>";
+ksort($courses3);
+echo "ascending oder by key :".implode(",",$courses3)."<br>";
+rsort($courses3);
+echo "descending oder by value :".implode(",",$courses3)."<br>";
+krsort($courses3);
+echo "descending oder by key :".implode(",",$courses3)."<br>";
 ?>
 
 <h2>4-Change the following array's all values to upper case.</h2>
@@ -33,7 +37,7 @@ echo implode("," ,$courses4);
 <?php
 $colors = array("green" => "#008000", "purple" => "#800080", "red" => "	#FF0000", "white" => "#FFFFFF");
 foreach($colors as $c => $val){
-    echo $c . " : " . $val;
+    echo $c . " : " . $val."<br>";
 
 }
 ?>
@@ -83,12 +87,12 @@ echo "avg temps ".$avg."<br>";
 sort($temps);
 echo "five lowest temps <br>";
 for ($i = 0; $i < 5; $i++) {
-    echo "temp" . ($i + 1) . "->" . $temps[$i];
+    echo "temp" . ($i + 1) . "->" . $temps[$i]."<br>";
 }
 rsort($temps);
-echo "five highest temps";
+echo "five highest temps <br>";
 for ($i = 0; $i < 5; $i++) {
-    echo "temp" . ($i + 1) . "->" . $temps[$i];
+    echo "temp" . ($i + 1) . "->" . $temps[$i]."<br>";
 }
 
  

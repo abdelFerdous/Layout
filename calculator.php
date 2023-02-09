@@ -7,6 +7,7 @@
      <div class="col">
 <input type="number" name="secondnumber" placeholder="Second Number" step="0.01" class="form-control" required>
      </div>
+</div>     
     
     <select name="operator">
         <option value="add">Add</option>
