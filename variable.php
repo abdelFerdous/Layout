@@ -69,7 +69,12 @@ echo "<br>the lenght of joined string :". strlen($joinedString);
 <h3>6-script to detect the browser</h3>
 <?php
 
-echo $_SERVER['HTTP_USER_AGENT'] . "\n\n";
+$user_agent = $_SERVER['HTTP_USER_AGENT'] . "\n\n";
+if (strpos($user_agent , 'Chrome') == true) {
+  echo "browser = Google Chrome";
+}else{
+  echo "you aren't using chrome";
+}
 ?>
 
 <?php include("footer.php")?>
