@@ -21,11 +21,35 @@ for($c=0 ; $c<10 ;$c++){
     echo "<h3>Date</h3>";
      echo date("m . d . Y");
     ?> 
+    <script>
+    document.write("Hello this is JavaScript"); 
+    </script>
+    <noscript>
+        Please enable java script to see the message.
+    </noscript>
+    <input type="button" onclick="hello()" value="Click me daddy">
     <h3>3.1 Variable in php</h3>
     <?php
     $title1 = "php is intresting";
     echo "<h4>" . $title1 . "</h4>";
     ?>
+    <script>
+        window.alert("this will trigger an alert box");
+        window.alert(5+10);
+        console.log("consol log");
+        document.write("document write");
+    </script>
+
+    <input type="button" onclick="add()" value="addition">
+    <hr>
+    <p id="place1" style="color: red; background-color: green;"> </p>
+    <span id="place2" style="color: red; background-color: green;"> </span>
+    <script>
+        document.getElementById("place1").innerHTML="this will go to place 1";
+        document.getElementById("place2").innerHTML="this will go to place 2";
+    </script>
+    <h2>changing background-color</h2>
+    <input type="color" name="background" onchange="changeColor(name,this.value )">
     <h3>3.5 Table and Variables</h3>
     <?php
     $g1 = 5;
